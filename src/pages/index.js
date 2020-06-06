@@ -1,7 +1,9 @@
 import { Link } from 'gatsby'
 import React from 'react'
+import About from '../components/About/About'
 import Banner from '../components/Banner/Banner'
 import Layout from '../components/Layout/Layout'
+import Services from '../components/Services/Services'
 import SimpleHero from '../components/SimpleHero/SimpleHero'
 
 export default function Home() {
@@ -17,6 +19,8 @@ export default function Home() {
           </Link>
         </Banner>
       </SimpleHero>
+      <About />
+      <Services />
     </Layout>
   )
 }

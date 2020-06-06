@@ -33,7 +33,7 @@ const Navbar = () => {
         </ul>
         <div className={styles.navSocialLinks}>
           {socialIcons.map((item, i) => (
-            <a key={i} href={item.url} target="_blank">
+            <a key={i} href={item.url} target="_blank" rel="noreferrer">
               {item.icon}
             </a>
           ))}
