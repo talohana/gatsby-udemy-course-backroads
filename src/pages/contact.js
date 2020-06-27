@@ -1,13 +1,15 @@
-import React from "react"
-import Layout from "../components/Layout"
-import StyledHero from "../components/StyledHero"
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby';
+import React from 'react';
+import Contact from '../components/Contact/Contact';
+import Layout from '../components/Layout';
+import StyledHero from '../components/StyledHero';
 export default function contact({ data }) {
   return (
     <Layout>
       <StyledHero img={data.contactBcg.childImageSharp.fluid} />
+      <Contact />
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`
@@ -20,4 +22,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
