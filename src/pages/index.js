@@ -6,10 +6,12 @@ import About from '../components/Home/About';
 import FeaturedTours from '../components/Home/FeaturedTours';
 import Services from '../components/Home/Services';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import StyledHero from '../components/StyledHero';
 
 export default ({ data }) => (
   <Layout>
+    <SEO title="Home" />
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
         title="continue exploring"

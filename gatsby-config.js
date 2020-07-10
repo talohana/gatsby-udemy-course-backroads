@@ -16,6 +16,9 @@ module.exports = {
     title: 'Backroads',
     description: 'Explore awesome worldwide tours & discorver what makes each of them unique.',
     author: '@johndoe',
+    twitterUsername: '@john_doe',
+    image: '/defaultBcg.jpeg',
+    siteUrl: 'https://backroads-project-udemy.netlify.app/',
   },
   plugins: [
     {
@@ -37,5 +40,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 };

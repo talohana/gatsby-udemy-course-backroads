@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import Day from '../components/SingleTour/Day';
 import StyledHero from '../components/StyledHero';
 import styles from '../css/template.module.css';
+
 const TourTemplate = ({ data }) => {
   const {
     name,
@@ -75,7 +76,7 @@ export const query = graphql`
       }
       images {
         fluid(quality: 90, maxWidth: 4160) {
-          ...GatsbyContentfulFluid_tracedSVG
+          ...GatsbyContentfulFluid_withWebp
         }
       }
     }
