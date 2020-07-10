@@ -20,8 +20,6 @@ const BlogTemplate = ({ data }) => {
       'embedded-entry-block': node => {
         const { title, image, text } = node.data.target.fields;
 
-        console.log(node.data.target.fields);
-
         return (
           <div>
             <h1>this is other post : {title['en-US']}</h1>
